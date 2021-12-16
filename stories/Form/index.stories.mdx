@@ -1,0 +1,27 @@
+<!--- index.stories.mdx -->
+
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import BaseCard from "../../packages/tuna-base-card/src/index";
+import BaseForm from "../../packages/tuna-form/src/form";
+
+<Meta title="Tuna_Component/BaseForm/Doc" component={BaseForm} />
+
+# 描述
+
+基础的 Form 表单配置，提供方便的方法，简化 form 表单
+
+# Demo
+
+export const Template = (args) => {
+  return <BaseForm {...args} />;
+};
+
+<Canvas>
+  <Story name="基础form-mdx">{Template.bind({})}</Story>
+</Canvas>
+
+# 参数定义
+
+| 参数   | 说明                    | 类型                                                                           | 默认值 |
+| ------ | ----------------------- | ------------------------------------------------------------------------------ | ------ |
+| fields | form 多种类型的参数配置 | IFormItem: (import { IFormItem } from ’@tuna/tuna-form/src/common/interface'） | []     |
