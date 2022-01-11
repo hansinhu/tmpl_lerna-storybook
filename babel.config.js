@@ -24,6 +24,7 @@ module.exports = function (api) {
       },
     ],
     ['@babel/plugin-proposal-class-properties'],
+    ['babel-plugin-inline-react-svg']
   ]
 
   return {

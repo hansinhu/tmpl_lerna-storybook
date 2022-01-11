@@ -1,14 +1,10 @@
----
-to: packages/<%= name%>/package.json
----
-
 {
-  "name": "@my_scope/<%= name%>",
+  "name": "@my_scope/button",
   "version": "0.0.0",
-  "author": "<%= author%>",
+  "author": "hansinhu",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/<%= name%>.esm.js",
+  "module": "dist/button.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
@@ -22,6 +18,6 @@ to: packages/<%= name%>/package.json
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^17.0.2"
   }
 }

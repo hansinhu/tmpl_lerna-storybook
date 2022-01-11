@@ -3,7 +3,7 @@ to: packages/<%= name%>/package.json
 ---
 
 {
-  "name": "@tuna/<%= name%>",
+  "name": "@tuya-fe/<%= name%>",
   "version": "0.0.0",
   "author": "<%= author%>",
   "license": "MIT",

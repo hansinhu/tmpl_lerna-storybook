@@ -1,18 +1,22 @@
-### 如何创建一个package.json
+# DOC
 
-```shell
-# 创建一个组件
-yarn hygen lerna tsdx --name tuna-base-card --author jianba
+## 新增lerna组件
 
-# 创建一个stroybook
-yarn hygen lerna storytpl --name BaseCard
+```sh
+npx hygen lerna tsdx --name <component-name> --author <author>
+```
+
+## 新增sotorybook文档
+
+```sh
+yarn hygen lerna storytpl --name <doc-name>
 ```
 
 ### 添加内部依赖包
 
 ```
-// 将card添加到form组件库里
-lerna add @tuna/tuna-base-card --scope=@tuna/tuna-form
+// 将button添加到card组件库里
+lerna add @my_scope/button --scope=@my_scope/card
 ```
 
 ### 添加外部包
@@ -20,8 +24,9 @@ lerna add @tuna/tuna-base-card --scope=@tuna/tuna-form
 -P --peer
 
 ```
-lerna add antd --scope=@tuna/tuna-base-card -P
+lerna add react --scope=@my_scope/button -P
 ```
+
 
 ### 内部包相互引用
 
@@ -47,5 +52,5 @@ lerna changed
 #### 发包
 
 ```shell
-yalc push
+yarn push
 ```

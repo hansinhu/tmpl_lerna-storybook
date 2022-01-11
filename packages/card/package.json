@@ -1,14 +1,10 @@
----
-to: packages/<%= name%>/package.json
----
-
 {
-  "name": "@my_scope/<%= name%>",
+  "name": "@my_scope/card",
   "version": "0.0.0",
-  "author": "<%= author%>",
+  "author": "hansinhu",
   "license": "MIT",
   "main": "dist/index.js",
-  "module": "dist/<%= name%>.esm.js",
+  "module": "dist/card.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"

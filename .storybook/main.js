@@ -8,5 +8,10 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/preset-scss"
-  ]
+  ],
+  // babel: async (options) => {
+  //   options.plugins.push('babel-plugin-inline-react-svg');
+  //   return options;
+  // },
+  // "framework": "@storybook/react"
 }
