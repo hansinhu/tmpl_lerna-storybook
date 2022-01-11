@@ -54,3 +54,9 @@ lerna changed
 ```shell
 yarn push
 ```
+
+### Sass-loader 与webpack 版本问题，需要把 nodejs 切换到低版本
+
+```
+nvm use 14.17.0
+```
