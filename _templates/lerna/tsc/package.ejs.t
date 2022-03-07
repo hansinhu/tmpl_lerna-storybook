@@ -3,7 +3,7 @@ to: packages/<%= name%>/package.json
 ---
 
 {
-  "name": "@tuya-fe/<%= name%>",
+  "name": "@my_scope/<%= name%>",
   "version": "0.0.0",
   "author": "<%= author%>",
   "license": "MIT",
